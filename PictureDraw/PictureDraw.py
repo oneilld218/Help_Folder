@@ -4,7 +4,6 @@ inputs: [navn, efternavn] & dato
 """
 
 import os
-import shutil
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -17,7 +16,15 @@ os.chdir(script_path)
 origional_picture = "Covidpass.png"
 customized_picture = "Customized_picture.png"
 
+# Customize settings
 font = "FreeMono.ttf"
+
+# Text details
+first_name = "Jane"
+last_name = "Doe"
+date = "14-02-2021 16:23"
+
+
 
 # Folder for customized pictures
 try:
