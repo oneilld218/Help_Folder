@@ -1,8 +1,5 @@
 """
 Todo
-skriv til billede
-gem billede
-størrelse: 640x320 pixels
 inputs: [navn, efternavn] & dato
 """
 
@@ -42,9 +39,8 @@ with Image.open(customized_picture) as img:
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype(font, 20)
     width, height = img.size
-    
-    # draw.line((0,0) + img.size, fill=128)
-    # draw.line((0, img.size[1], img.size[0], 0), fill=128)
+
     draw.text((width//2, height//2), "Text One", (0, 0, 0), font=font)
     
+    img.save(customized_picture)
     img.show()
