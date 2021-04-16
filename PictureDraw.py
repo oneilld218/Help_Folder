@@ -1,8 +1,3 @@
-"""
-Todo
-inputs: [navn, efternavn] & dato
-"""
-
 import os
 import datetime
 from PIL import Image, ImageDraw, ImageFont
