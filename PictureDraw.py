@@ -40,7 +40,7 @@ try:
 except:
     os.system(f"cp {origional_picture} {customized_picture}")
     os.system(f"mv {customized_picture} Customized_Pictures")
-    # Change directory to new folder, if folder already exists
+    # Change directory to new folder
     os.chdir("Customized_Pictures")
 
 
